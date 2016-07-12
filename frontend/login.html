@@ -1,0 +1,16 @@
+
+<div class="container" ng-controller="LoginController">
+    <form class="login-form" ng-submit="postForm()">
+        <p></p>
+        <p></p>
+        <h2>Login</h2>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus ng-model="username">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="password">
+        <br>
+        <div class="alert alert-danger" role="alert" ng-show="errorMsg">{{errorMsg}}</div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
+    </form>
+</div>
